@@ -1,0 +1,122 @@
+.headMain{
+
+}
+.headMain>.headTop{
+    height: 30px;
+    background-color: #0d2347;
+    padding: 0 20px;
+    line-height: 30px;
+ }
+.headMain>.headTop>.left{
+    float:left;
+    color:#a1a7b6;
+    font-size: 12px;
+}
+
+.headMain>.headTop>.right{
+    float:right;
+    color:#ffffff;
+    font-size: 14px;
+}
+.headMain>.headTop>.right>span{
+    margin:0 5px;
+}
+.headMain>.headTop>.right>span:nth-child(2){
+    margin-right: 20px;
+}
+.headMain>.headBottom{
+    height: 80px;
+    position: relative;
+    padding: 14px 0 20px 0;
+}
+.headMain>.headBottom>img{
+    position: absolute;
+    left:50%;
+    margin-left: -75px;
+    width: 150px;
+
+}
+.headMain>.headBottom>.bRight{
+    position: absolute;
+    right: 25px;
+}
+.headMain>.headBottom>.bRight>.bRight_t{
+    font-size: 14px;
+    color:#000;
+}
+.headMain>.headBottom>.bRight>.bRight_t>span:nth-child(1){
+    margin-right: 20px;
+}
+
+.headMain>.headBottom>.bRight>.bRight_b{
+    margin-top: 35px;
+    border-bottom: 1px solid;
+}
+
+.headMain>.headBottom>.bRight>.bRight_b>i{
+    float: right;
+    font-size: 20px;
+}
+.headMain>.headBottom>.bRight>.bRight_b>input{
+    border:none;
+    outline: none;
+}
+
+
+
+
+/*导航*/
+.headMain>.comNav{
+    padding-bottom: 30px;
+}
+.headMain>.comNav>.nav_li{
+    display: inline-block;
+    margin: 0 30px;
+    position: relative;
+}
+.headMain>.comNav>.nav_li:nth-child(1){
+    margin-left:0 !important;
+}
+.headMain>.comNav>.nav_li>.nav_span{
+    color:#333333;
+}
+
+/*.nav_li:hover .navHov_ul_par{*/
+    /*display: block !important;*/
+/*}*/
+
+
+
+
+.headMain>.comNav>.nav_li>.navHov_ul_par{
+    background-color: #ffffff;
+    position: absolute;
+    width: 1200px;
+    text-align: center;
+    z-index: 1;
+    border-top: 1px solid #666;
+    top: 35px;
+    display:none;
+}
+.headMain>.comNav>.nav_li>.navHov_ul_par>.navHov_ul{
+    display: inline-block;
+    overflow: hidden;
+}
+.headMain>.comNav>.nav_li>.navHov_ul_par>.navHov_ul>li{
+    display:inline-block ;
+    min-width: 100px;
+    float: left;
+
+   }
+.headMain>.comNav>.nav_li>.navHov_ul_par>.navHov_ul>li>span:nth-child(1){
+    margin-top: 0 !important;
+}
+.headMain>.comNav>.nav_li>.navHov_ul_par>.navHov_ul>li>span{
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+}
+.headMain>.comNav>.nav_li>.navHov_ul_par>.navHov_ul>li>img{
+    width: 200px;
+    height: 255px;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情页</title>
+    <!--公共css-->
+    <link rel="stylesheet" href="../css/swiper.css">
+    <link rel="stylesheet" href="../plugin/exzoom/jquery.exzoom.css">
+    <link rel="stylesheet" href="../css/common.css">
+
+
+    <link rel="stylesheet" href="../css/goodsDetail.css">
+    <!--公共js-->
+    <script src="../plugin/jquery.js"></script>
+    <script src="../plugin/exzoom/jquery.exzoom.js"></script>
+    <script src="../plugin/swiper.js"></script>
+</head>
+<body>
+<div id="header"></div>
+<div class="wraper">
+    <div class="bannerLink">
+        <span>男装 > 针织衫/毛衣 > 男装|纯色舒适长袖针织衫</span>
+    </div>
+    <div class="goods">
+        <div class="goodsImg">
+            <div class="exzoom" id="exzoom">
+                <!--大图区域-->
+                <div class="exzoom_img_box">
+                    <ul class='exzoom_img_ul'>
+                        <li><img src="../img/fdj/a1.png"/></li>
+                        <li><img src="../img/fdj/a2.png"/></li>
+                        <li><img src="../img/fdj/a3.png"/></li>
+                        <li><img src="../img/fdj/a4.png"/></li>
+                        <li><img src="../img/fdj/a5.png"/></li>
+                        <li><img src="../img/fdj/a1.png"/></li>
+                        <li><img src="../img/fdj/a2.png"/></li>
+                        <li><img src="../img/fdj/a3.png"/></li>
+                    </ul>
+                </div>
+                <!--缩略图导航-->
+                <div class="exzoom_nav"></div>
+                <!--控制按钮-->
+                <p class="exzoom_btn"> <a href="javascript:void(0);" class="exzoom_prev_btn"> &lt; </a> <a href="javascript:void(0);" class="exzoom_next_btn"> &gt; </a> </p>
+            </div>
+            <script type="text/javascript">
+                $("#exzoom").exzoom({
+                    autoPlay: false,
+                });//方法调用，务必在加载完后执行
+            </script>
+        </div>
+        <div class="goodsOption">
+            <div class="reduce">减价</div>
+            <div class="title">男装|休闲简约长袖套头连帽衫卫衣</div>
+            <div class="kh">款号：000513877</div>
+            <div class="activity">
+                <span>活动</span>· 单笔订单满229元免运费
+            </div>
+            <div class="price">
+                <span>¥198.00</span> 
+                <span>¥134.44</span>
+            </div>
+            <div class="goodsColor">
+                颜色：<span>海军蓝</span>
+            </div>
+            <div class="goodsimg">
+                <span><img src="" alt=""></span>
+                <span><img src="" alt=""></span>
+            </div>
+            <div class="goodsSize">
+                <div class="goodsSizeTitle">尺码：<span id="chooseSize"></span></div>
+                <ul class="goodsSizeul">
+                    <li class="sizeLi">167/123(XS)</li>
+                    <li class="sizeLi">167/124(XS)</li>
+                    <li class="sizeLi">167/125(XS)</li>
+                    <li class="sizeLi">167/126(XS)</li>
+                </ul>
+            </div>
+            <div class="number">
+                数量：<span id="nums">1</span>
+            </div>
+            <div class="addInput">
+                <button type="button" id="reduceNum">-</button>
+                <input type="text" id="number" value="1">
+                <button type="button" id="addNum">+</button>
+            </div>
+            <div class="addButton">
+                <span>加入购物车</span>
+                <span>立即购买</span>
+            </div>
+        </div>
+    </div>
+    <div class="goodsSwiper">
+
+    </div>
+    <div class="goodsBottom">
+
+    </div>
+
+</div>
+<div id="footer"></div>
+</body>
+</html>
+<script>
+    $("#header").load("../common/header.html")
+    $("#footer").load("../common/footer.html")
+
+
+
+    $(".sizeLi").click(function(){
+        var val = $(this)[0].innerText;
+
+        // var len = $(".sizeLi").length;
+        // for(let i=0;i<len;i++){
+        //     $(".sizeLi")[i].style.color = "#cccccc"
+        // }
+        $(".sizeLi").removeClass("red")
+        $(this).addClass("red")
+        $("#chooseSize")[0].innerText = val;
+    })
+
+    var number = 1;
+    $("#addNum").click(function(){
+        number = number+1;
+        if(number>3){
+            number = 3;
+        }
+        console.log(number)
+        $("#nums")[0].innerText = number
+        $("#number").val(number)
+    })
+    $("#reduceNum").click(function(){
+        number = number-1;
+        if(number<1){
+            number = 1;
+        }
+        $("#nums")[0].innerText = number
+        $("#number").val(number)
+    })
+
+</script>

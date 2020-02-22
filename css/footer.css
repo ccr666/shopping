@@ -1,0 +1,113 @@
+.f_Main{
+
+}
+.f_Main>.f_Main_t{
+
+}
+.f_Main>.f_Main_t>div{
+    padding: 20px 0;
+    text-align: center;
+}
+.f_Main>.f_Main_t>div>span{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.f_Main>.f_Main_t>div>span:nth-child(2){
+    position: relative;
+    height: 40px;
+    width: 400px;
+}
+.f_Main>.f_Main_t>div>span:nth-child(2)>input{
+    position: absolute;
+     height: 100%;
+     width: 100%;
+     border-radius: 3px;
+     border: none;
+    left: 0;
+ }
+.f_Main>.f_Main_t>div>span:nth-child(2)>i{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -8.5px;
+
+}
+
+.f_Main>.f_Main_t>div>span:nth-child(3)>i{
+    font-size: 40px;
+    margin-left: 10px;
+
+}
+.f_Main>.f_Main_t>div>span:nth-child(3)>div{
+    display: inline-block;
+    padding: 13px 0;
+    vertical-align: bottom;
+
+}
+.f_Main>.f_Main_t>div>span:nth-child(4){
+    font-size: 13px;
+    text-align: right;
+}
+
+
+
+
+
+
+.f_Main>.f_Main_b{
+    margin-top: 50px;
+}
+.f_Main>.f_Main_b>.f_Main_b_top{
+    display: flex;
+}
+.f_Main>.f_Main_b>.f_Main_b_top>span{
+    display: inline-block;
+    width: 190px;
+}
+.f_Main>.f_Main_b>.f_Main_b_top>span:nth-child(4){
+    width: 250px !important;
+}
+.f_Main>.f_Main_b>.f_Main_b_top>span:nth-child(1){
+    width: 150px !important;
+}
+.f_Main>.f_Main_b>.f_Main_b_bot{
+    overflow: hidden;
+}
+.f_Main>.f_Main_b>.f_Main_b_bot>.inline_b{
+    width: 190px;
+    padding:0;
+    float:left;
+}
+.f_Main>.f_Main_b>.f_Main_b_bot>.inline_b>li{
+    padding:10px 0;
+}
+.f_Main>.f_Main_b>.f_Main_b_bot>div{
+    padding-top:22px !important;
+}
+.f_Main>.f_Main_b>.f_Main_b_bot>.inline_b:nth-child(1){
+    width: 150px !important;
+}
+.f_Main>.f_Main_b>.f_Main_b_bot>.inline_b:nth-child(4){
+    width: 250px;
+}
+.f_Main>.f_Main_b>.f_Main_b_bot>.inline_b:nth-child(4)>img{
+    width: 230px;
+}
+.f_Main>.f_Main_b>.f_Main_b_bot>.inline_b:nth-child(5)>.navSpan{
+    margin: 20px 0;
+    display: inline-block;
+}
+.f_Main>.f_Main_b>.f_Main_b_bot>.inline_b:nth-child(5)>img{
+     width: 170px;
+ }
+.f_Main>.f_Main_b>.f_Main_b_bot>.inline_b:nth-child(6)>img{
+    width: 125px;
+}
+
+
+.f_Main>.f_Main_bottom>p{
+    font-size: 12px;
+    color:#333333;
+    text-align: center;
+}
